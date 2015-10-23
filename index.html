@@ -1,22 +1,50 @@
 <!DOCTYPE html>
-<html style="background-color: #95FF95;">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Ask Bob</title>
-    <script src=
-    "https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
-    </script>
+<meta charset="UTF-8">
+<title>Ask Bob</title>
+<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+</script>
+<style>
+body {
+background-color: #95FF95;
+font-family: monospace;
+padding:0;
+margin:0;
+}
+
+.table {
+display: table;
+width: 100%;
+height: 100%;
+position: absolute;
+}
+
+.table-row {
+display:table-row;
+}
+
+#pg {
+display: table-cell;
+vertical-align: middle;
+text-align: center;
+}
+</style>
 </head>
 <body style="">
-    <div style="">
-        <h1 style="text-align: center; font-family: monospace;">Ask Bob</h1>
-        <div style="text-align: center; font-family: monospace;">
-            <p>Bob is an ancient IT wizard who has all the answers to all your
-            questions.</p>
-        </div>
-        <div style=" text-align: center;">
-            <input style=" text-align: center; width: 30%;" type="text">
-        </div>
-    </div>
+<div class="table">
+<div class="table-row">
+<div id="pg">
+<h1>Ask Bob</h1>
+<div>
+<p>Bob is an ancient IT wizard who has all the answers to all your questions.</p>
+</div>
+<div>
+<input style="width: 30%;" type="text">
+</div>
+</div>
+</div>
+</div>
 </body>
 </html>
